@@ -1,3 +1,6 @@
+tecnologias usadas no projeto: with open(),  for in, e csv
+
+
 Metodo de uso:
 va no arquivo "dados.csv" e insira os valores separados
 por nome e nota.
