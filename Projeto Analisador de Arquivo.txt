@@ -1,0 +1,58 @@
+importar a biblioteca csv
+
+criar uma lista vazia
+
+with open abre o csv e associa ele a variável arquivo.
+quando o aquivo é passado ao csv.reader "leitor = csv.reader(arquivo)", ele cria  a variável leitor, que vai percorer linha por linha do aquivo e traformar linha por linha em lista de string
+
+as pra dar o nome a associação  e depois: pra abrir o bloco de comando do with open
+
+pedir ao leitor que pule a primeira lista
+
+então o leito vai ler a primeira linha do csv associado a variável arquivo
+transformar em lista, pular ela, ler a segunda linha,trasformar em lista.
+
+para cada linha no leitor :
+
+O for in é basicamente um laço que vai pegando um item de cada vez do iterador (no caso, o leitor) e atribuindo esse item à variável linha. A cada iteração, o bloco de código roda com a linha atual. Assim que o leitor não tiver mais linhas (ou seja, todos os dados foram lidos), o loop se encerra. É parecido com um “enquanto houver elementos”, só que o for faz isso de forma automática, simples e legível, atribuindo cada elemento à variável na hora certa.
+
+a variável nota vai receber o conteúdo do índice 1 da lista 2 e transformar ele em float
+
+depois vai armazenar o valor da variável nota na lista vazia notas e var seguir no looping ate o fim das linhas que estão sendo transformadas em listas pelo leitor
+
+sum(notas)
+
+Função do Python que soma todos os valores da lista.
+
+
+len(notas)
+
+Retorna o tamanho da lista.
+
+max(notas)
+
+retorna o maior valor da lista
+
+min(notas)
+
+retorna o menor valor da lista
+
+-----------------------------------
+
+coisas pra salvas:
+
+.append : serve pra enviar o valor a uma lista que tiver espaço
+
+next() : pede pra pular algo mas deve ser usado o comando iter("minha lista")
+
+vale informar que o iterador nesse programa seria o "leitor" pois ele transforma o arquivo csv em lista e serve como ponte(iter() )o next
+
+Outros modos de abertura (importante saber)
+
+Mesmo que você não use agora, isso é base de manipulação de arquivos.
+
+Modo	Significado
+r	leitura
+w	escrita (apaga o conteúdo antigo)
+a	adicionar conteúdo
+x	criar arquivo novo
